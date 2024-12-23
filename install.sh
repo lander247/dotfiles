@@ -4,6 +4,7 @@ working_folder="$HOME/working"
 git_folder="$HOME/Git"
 
 # Install dependencies
+
 sudo apt install \
   git \
   build-essential \
@@ -11,10 +12,10 @@ sudo apt install \
   libxft-dev \
   libxinerama-dev \
   xorg \
-  picom \
   xinput \
   xwallpaper \
   xclip \
+  picom \
   brightnessctl \
   flameshot \
   pulseaudio \
@@ -22,11 +23,11 @@ sudo apt install \
 
 # Install extra packages
 # TODO: Make option for installing extra packages
+
 sudo apt install \
   firefox-esr \
   pavucontrol \
   unzip \
-  network-manager \
   imagemagick \
   ssh \
   macchanger
@@ -42,11 +43,13 @@ cd "$working_folder"
 
 # TODO: Make option to pull these files only
 # Install latest Neovim appimage
+
 wget https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod +x ./nvim.appimage
 sudo mv nvim.appimage /usr/local/bin/nvim
 
 # Install latest KeepassXC appimage
+
 keepass_version="$(curl --silent "https://api.github.com/repos/keepassxreboot/keepassxc/releases/latest" | grep -Po "(?<=\"tag_name\": \").*(?=\")")"
 
 wget https://github.com/keepassxreboot/keepassxc/releases/latest/download/KeePassXC-"$keepass_version"-x86_64.appimage
