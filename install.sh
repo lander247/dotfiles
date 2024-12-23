@@ -15,6 +15,7 @@ sudo apt install \
   xinput \
   xwallpaper \
   xclip \
+  dbus-x11 \
   picom \
   brightnessctl \
   flameshot \
@@ -51,7 +52,6 @@ sudo mv nvim.appimage /usr/local/bin/nvim
 # Install latest KeepassXC appimage
 
 keepass_version="$(curl --silent "https://api.github.com/repos/keepassxreboot/keepassxc/releases/latest" | grep -Po "(?<=\"tag_name\": \").*(?=\")")"
-
 wget https://github.com/keepassxreboot/keepassxc/releases/latest/download/KeePassXC-"$keepass_version"-x86_64.appimage
 chmod +x ./KeePassXC-"$keepass_version"-x86_64.appimage
 sudo mv KeePassXC-"$keepass_version"-x86_64.appimage ~/.local/bin/keepassxc
