@@ -6,7 +6,7 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# Useful scripts held here
+# Useful scripts
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi

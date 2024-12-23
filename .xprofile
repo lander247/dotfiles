@@ -3,11 +3,11 @@
 # set the background with the `setbg` script
 setbg &
 
+# Decrease key repeat delay to 300ms and increase key repeat rate to 50 per second
+xset r rate 300 50
+
 autostart="picom"
 
 for program in $autostart; do
 	pidof -sx "$program" || "$program" &
 done >/dev/null 2>&1
-
-# Ensure that xrdb has finished running before moving on to start the WM/DE.
-[ -n "$xrdbpid" ] && wait "$xrdbpid"

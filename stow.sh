@@ -1,2 +1,2 @@
 #!/bin/sh
-stow --target="$HOME" --verbose --no .
+stow --target="$HOME" --verbose .
