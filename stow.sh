@@ -1,2 +1,2 @@
 #!/bin/sh
-stow --dotfiles --target="$HOME" --verbose -n .
+stow --target="$HOME" --verbose --no .
