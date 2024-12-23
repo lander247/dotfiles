@@ -1,4 +1,5 @@
 # Source .xprofile
 [ -f ~/.xprofile ] && . ~/.xprofile
 
-exec dwm
+dbus-update-activation-environment --all
+dbus-launch ssh-agent dwm
