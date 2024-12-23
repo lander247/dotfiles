@@ -1,0 +1,9 @@
+#!/bin/sh
+# Run Grayjay binary
+cd ~/Software/Grayjay
+./Grayjay > /dev/null 2>&1 &
+
+pid=$!
+wait $pid 
+ 
+rm -r ~/Grayjay
