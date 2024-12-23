@@ -36,7 +36,7 @@ mkdir "$git_folder"
 
 cd "$git_folder"
 
-# TODO: Clone personal repos and then run GNU stow afterwards
+# TODO: Clone personal repos
 
 cd "$working_folder"
 
