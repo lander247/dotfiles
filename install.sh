@@ -2,6 +2,7 @@
 
 working_folder="$HOME/working"
 git_folder="$HOME/Git"
+bin_folder="$HOME/.local/bin"
 
 # Install dependencies
 
@@ -35,14 +36,11 @@ sudo apt install \
 
 mkdir "$working_folder"
 mkdir "$git_folder"
-
-cd "$git_folder"
-
-# TODO: Clone personal repos
+mkdir "$bin_folder"
 
 cd "$working_folder"
-
 # TODO: Make option to pull these files only
+
 # Install latest Neovim appimage
 
 wget https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -57,5 +55,9 @@ chmod +x ./KeePassXC-"$keepass_version"-x86_64.appimage
 sudo mv KeePassXC-"$keepass_version"-x86_64.appimage ~/.local/bin/keepassxc
 
 rm -r "$working_folder"
+
+cd "$git_folder"
+
+# TODO: Clone personal repos
 
 echo "Done!"
