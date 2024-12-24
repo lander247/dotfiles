@@ -56,8 +56,11 @@ sudo mv KeePassXC-"$keepass_version"-x86_64.appimage ~/.local/bin/keepassxc
 
 rm -r "$working_folder"
 
+
 cd "$git_folder"
 
-# TODO: Clone personal repos
+git clone https://github.com/lander247/dotfiles.git
+
+git clone https://github.com/lander247/dwm.git
 
 echo "Done!"
