@@ -13,5 +13,6 @@ fi
 
 # Set environment variables
 export LESSHISTFILE=-
+export PATH=$PATH:/usr/local/go/bin
 
 startx
