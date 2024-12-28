@@ -5,8 +5,8 @@ case $- in
 esac
 
 # Aliases
-if [ -f "$HOME/.aliases" ]; then
-    . "$HOME/.aliases"
+if [ -f "$HOME/.aliasrc" ]; then
+    . "$HOME/.aliasrc"
 fi
 
 # Set environment variables
@@ -18,6 +18,7 @@ HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
 shopt -s histappend
+
 HISTSIZE=1000
 HISTFILESIZE=2000
 
