@@ -4,12 +4,20 @@ case $- in
       *) return;;
 esac
 
+# Aliases
+if [ -f "$HOME/.aliases" ]; then
+    . "$HOME/.aliases"
+fi
+
+# Set environment variables
+export LESSHISTFILE=-
+export PATH=$PATH:/usr/local/go/bin
+
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
 shopt -s histappend
-
 HISTSIZE=1000
 HISTFILESIZE=2000
 
