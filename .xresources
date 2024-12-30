@@ -1,3 +1,6 @@
+! dwm theme settings for xrdb patch
+dwm.selbordercolor: #E6E6E6
+
 ! Dracula Xresources palette
 *.foreground: #F8F8F2
 *.background: #282A36
