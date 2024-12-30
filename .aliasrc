@@ -2,10 +2,10 @@
 
 # ls aliases
 alias \
-	ls="ls --color=auto" \
-	ll="ls -lh" \
-	la="ls -A" 
+  ls="ls --color=auto" \
+  ll="ls -lh" \
+  la="ls -A" 
 
 # Aliases to make commands shorter
 alias \
-	vi="nvim" 
+  vi="nvim" 
