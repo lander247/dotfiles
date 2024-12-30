@@ -1,8 +1,8 @@
 ! dwm theme settings for xrdb patch
-dwm.normbordercolor: #44475A
+dwm.normbordercolor: #404040
 dwm.normbgcolor: #282A36
 dwm.normfgcolor: #F8F8F2
-dwm.selbordercolor: #BD93F9
+dwm.selbordercolor: #44475A
 dwm.selbgcolor: #44475A
 dwm.selfgcolor: #F8F8F2
 
