@@ -9,7 +9,7 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 if [ -d "$HOME/.local/bin" ]; then
-	. "$HOME/.local/bin"
+	PATH="$HOME/.local/bin:$PATH"
 fi
 
 startx
