@@ -8,9 +8,8 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# Useful scripts
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
+if [ -d "$HOME/.local/bin" ]; then
+	. "$HOME/.local/bin"
 fi
 
 startx
