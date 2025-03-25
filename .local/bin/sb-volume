@@ -2,11 +2,11 @@
 
 vol="$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
 
-# If muted set icon to 󰝟
+# If muted set icon to X
 if [ "$vol" != "${vol%\[MUTED\]}" ]; then
-	icon="󰝟"
+	icon="X"
 else
-	icon="󰕾"
+	icon="O"
 fi
 
 vol="${vol#Volume: }"
