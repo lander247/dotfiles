@@ -4,9 +4,9 @@ vol="$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
 
 # If muted set icon to X
 if [ "$vol" != "${vol%\[MUTED\]}" ]; then
-	icon="X"
+	icon="x"
 else
-	icon="O"
+	icon=""
 fi
 
 vol="${vol#Volume: }"
@@ -20,4 +20,4 @@ split() {
 
 vol="$(printf "%.0f" "$(split "$vol" ".")")"
 
-echo "$icon $vol%"
+echo "$icon$vol%"
